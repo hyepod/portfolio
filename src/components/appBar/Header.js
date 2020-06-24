@@ -90,19 +90,19 @@ const Header = React.forwardRef((props, ref) => {
             <MenuItem onClick={handleMobileClick(0)}>
                 <Typography color="inherit">A propos</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(1.2)}>
+            <MenuItem onClick={handleMobileClick(1.6)}>
                 <Typography color="inherit">Formation</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(2.9)}>
+            <MenuItem onClick={handleMobileClick(3.65)}>
                 <Typography color="inherit">Experiences</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(4.6)}>
+            <MenuItem onClick={handleMobileClick(5.55)}>
                 <Typography color="inherit">Projets</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(6.6)}>
+            <MenuItem onClick={handleMobileClick(7.95)}>
                 <Typography color="inherit">Compétences</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(7.9)}>
+            <MenuItem onClick={handleMobileClick(9.45)}>
                 <Typography color="inherit">Centre d'intérêt</Typography>
             </MenuItem>
         </Menu>
