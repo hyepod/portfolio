@@ -22,7 +22,10 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '5em',
         marginTop: '0px',
         marginBottom: '0px !important',
-    }
+    },
+    familyName: {
+        color: '#485e8a',
+    },
 }));
 
 
@@ -37,7 +40,7 @@ export function TitleAnimated(props) {
 
     return (
     <animated.h1 {...bind()} className={classes.title} style={{ transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`) }}>
-        HIPPOLYTE BRINGER
+        HIPPOLYTE <span className={classes.familyName}>BRINGER</span>
     </animated.h1>
     )
 

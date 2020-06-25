@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        // paddingBottom: '255px',
+        paddingBottom: '255px',
         paddingTop: '200px',
         paddingLeft: '48px',
         paddingRight: '48px',
@@ -40,14 +40,14 @@ export function About(props) {
                 15 rue des Halles, 75001 Paris &nbsp; &nbsp;•&nbsp; &nbsp; 06 17 03 65 59 &nbsp; &nbsp;•&nbsp; &nbsp; bringer.hippolyte@outlook.fr
             </Typography>
             <Typography variant='body1'>
-                Diplomé Ingénieur, je suis un passionné de l'informatique, que ce soit le web,
+                Diplômé ingénieur, je suis un passionné de l'informatique, que ce soit le web,
                 la gestion de data en passant par le machine learning.
             </Typography>
             <Typography variant='body1'>
-                Je cherche des projets challegeant afin de deployer tout mon potentiel.
+                Je cherche des projets challengeant afin de déployer tout mon potentiel.
             </Typography>
             <Typography variant='body1'>
-                N'hésitez pas en me contacter que ce soit pour une mission ou des renseignements
+                N'hésitez pas en me contacter pour une mission ou des renseignements.
             </Typography>
             <Typography variant='body1'>
                 Malt & compagnies

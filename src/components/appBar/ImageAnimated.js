@@ -8,9 +8,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
 const useStyles = makeStyles((theme) => ({
-    hover: {
-
-    },
     largeImg: {
         width: '150px',
         height: '150px',

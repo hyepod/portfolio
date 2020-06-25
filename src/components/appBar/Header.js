@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../style.scss';
 import ImageAnimated from '../appBar/ImageAnimated';
+// import { Link as RouterLink } from 'react-router-dom';
+import { Link } from 'react-scroll'
 
 // Import MATERIAL UI
 import Grid from '@material-ui/core/Grid';
@@ -56,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
     },
     sideNav: {
-        backgroundColor: '#343a40',
+        backgroundColor: '#485e8a',
     },
 }));
 
@@ -66,10 +68,6 @@ const Header = React.forwardRef((props, ref) => {
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
 
     const handleMobileMenuClose = () => {
-        setMobileMoreAnchorEl(null);
-    };
-    const handleMobileClick = (value) => () => {
-        ref.current.scrollTo(value)
         setMobileMoreAnchorEl(null);
     };
 
@@ -87,22 +85,22 @@ const Header = React.forwardRef((props, ref) => {
             open={Boolean(mobileMoreAnchorEl)}
             onClose={handleMobileMenuClose}
         >
-            <MenuItem onClick={handleMobileClick(0)}>
+            <MenuItem component={Link} activeClass="active" to="about" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">A propos</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(1.6)}>
+            <MenuItem component={Link} activeClass="active" to="education" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Formation</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(3.65)}>
+            <MenuItem component={Link} activeClass="active" to="experiences" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Experiences</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(5.55)}>
+            <MenuItem component={Link} activeClass="active" to="projects" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Projets</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(7.95)}>
+            <MenuItem component={Link} activeClass="active" to="skills" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Compétences</Typography>
             </MenuItem>
-            <MenuItem onClick={handleMobileClick(9.45)}>
+            <MenuItem component={Link} activeClass="active" to="interests" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Centre d'intérêt</Typography>
             </MenuItem>
         </Menu>
@@ -129,40 +127,41 @@ const Header = React.forwardRef((props, ref) => {
                         <Grid item container justify="center">
                             <ImageAnimated />
                         </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(0)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                A propos
-                            </Typography>
-                        </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(1)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                Formation
-                            </Typography>
-                        </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(2.3)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                Experiences
-                            </Typography>
-                        </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(3.7)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                Projets
-                            </Typography>
-                        </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(5.35)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                Compétences
-                            </Typography>
-                        </Grid>
-                        <Grid item onClick={() => ref.current.scrollTo(6.4)} className={classes.hover}>
-                            <Typography variant="button" className={classes.item}>
-                                Centre d'intérêt
-                            </Typography>
-                        </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    A propos
+                                </Typography>
+                            </Grid>
+
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="education" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Formation
+                                </Typography>
+                            </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="experiences" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Expériences
+                                </Typography>
+                            </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Projets
+                                </Typography>
+                            </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="skills" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Compétences
+                                </Typography>
+                            </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="interests" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Centre d'intérêt
+                                </Typography>
+                            </Grid>
                     </Grid>
                 </Toolbar>
             </AppBar>
-            {renderMobileMenu}
+                {renderMobileMenu}
         </Box>
     );
 })

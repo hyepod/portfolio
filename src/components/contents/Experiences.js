@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        // paddingBottom: '255px',
-        paddingTop: '255px',
+        paddingTop: '127.5px',
+        paddingBottom: '127.5px',
         paddingLeft: '48px',
         paddingRight: '48px',
         [theme.breakpoints.down('sm')]: {
@@ -31,7 +31,7 @@ export function Experiences(props) {
         <Grid item container className={classes.firstItem} direction="column" id="experiences">
             <Grid item className={classes.spaceBottom}>
                 <Typography variant='h3'>
-                    EXPERIENCE
+                    EXPÉRIENCES
                 </Typography>
             </Grid>
             <Grid item className={classes.spaceBottom}>

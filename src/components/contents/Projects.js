@@ -6,14 +6,16 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import OpenInNew from '@material-ui/icons/OpenInNew';
 
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        // paddingBottom: '255px',
-        paddingTop: '255px',
+        paddingBottom: '127.5px',
+        paddingTop: '127.5px',
         paddingLeft: '48px',
         paddingRight: '48px',
+        backgroundColor: '#EEF0F2',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '16px',
             paddingRight: '16px',
@@ -32,7 +34,7 @@ export function Projects(props) {
         <Grid item container className={classes.firstItem} direction="column" id="projects">
             <Grid item className={classes.spaceBottom}>
                 <Typography variant='h3'>
-                    PROJET
+                    PROJETS
                 </Typography>
             </Grid>
             <Grid item className={classes.spaceBottom}>
@@ -40,7 +42,9 @@ export function Projects(props) {
                     <Grid item xs={12} sm="auto">
                         <Link href="https://wikoa.fr" target="_blank" className="linkTitle" variant="h4">
                             Wikoa.fr
+                            <OpenInNew style={{ marginLeft: '8px', marginBottom: '-3px' }} />
                         </Link>
+
                     </Grid>
                     <Grid item>
                         <Typography variant='subtitle1' color='textSecondary'>
@@ -69,6 +73,7 @@ export function Projects(props) {
                     <Grid item xs={12} sm="auto">
                         <Link href="http://plutotquoi.com" target="_blank" className="linkTitle" variant="h4">
                             Plutotquoi.com
+                            <OpenInNew style={{ marginLeft: '8px', marginBottom: '-3px' }} />
                         </Link>
                     </Grid>
                     <Grid item>
@@ -121,6 +126,7 @@ export function Projects(props) {
                     <Grid item xs={12} sm="auto">
                         <Link href="http://vmbringer.fr" target="_blank" className="linkTitle" variant="h4">
                             Vmbringer.fr
+                            <OpenInNew style={{ marginLeft: '8px', marginBottom: '-3px' }} />
                         </Link>
                     </Grid>
                     <Grid item>
