@@ -17,7 +17,6 @@ import Menu from '@material-ui/core/Menu';
 import Box from '@material-ui/core/Box';
 
 
-
 const useStyles = makeStyles((theme) => ({
     sectionMobile: {
         width: '100%',
@@ -56,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
     },
     item: {
         fontWeight: 'bold',
+        color: '#b0bec5',
     },
     sideNav: {
         backgroundColor: '#485e8a',
@@ -66,6 +66,7 @@ const Header = React.forwardRef((props, ref) => {
 
     const classes = useStyles();
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
+    // const [activeLink, setActiveLink] = useState(0);
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -132,7 +133,6 @@ const Header = React.forwardRef((props, ref) => {
                                     A propos
                                 </Typography>
                             </Grid>
-
                             <Grid component={Link} item className={classes.hover} activeClass="active" to="education" spy={true} smooth={true} duration={500}>
                                 <Typography variant="button" className={classes.item}>
                                     Formation

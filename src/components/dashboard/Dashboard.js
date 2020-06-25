@@ -69,10 +69,12 @@ const useStyles = makeStyles((theme) => ({
     },
     climbing: {
         width: '15%',
+        height: 'auto',
         marginLeft: 'calc(100% - 15%)',
         [theme.breakpoints.down('xs')]: {
             width: '25%',
             marginLeft: 'calc(100% - 25%)',
+            height: 'auto',
         },
     },
 }));
@@ -97,5 +99,3 @@ const Dashboard = React.forwardRef((props, ref) => {
 })
 
 export default Dashboard;
-
-
