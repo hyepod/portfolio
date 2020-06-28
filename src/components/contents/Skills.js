@@ -9,10 +9,11 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        paddingBottom: '127.5px',
-        paddingTop: '127.5px',
+        paddingBottom: '127px',
+        paddingTop: '127px',
         paddingLeft: '48px',
         paddingRight: '48px',
+        backgroundColor: '#EEF0F2',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '16px',
             paddingRight: '16px',
@@ -39,13 +40,25 @@ export function Skills(props) {
                     IT
                 </Typography>
                 <Typography variant='body1'>
-                    • Langage: Python, C#/C++, VBA, SQL, HTML/CSS
+                    • Python (Pandas, Numpy), C#, VBA
                 </Typography>
                 <Typography variant='body1'>
-                    • Base de donnée: SQL
+                    • Django, Django Rest Framework (API REST)
                 </Typography>
                 <Typography variant='body1'>
-                    • Framework: ReactJs, Django
+                    • SQL (Postgrés, MySQL)
+                </Typography>
+                <Typography variant='body1'>
+                    • Cloud : AWS, Gandi
+                </Typography>
+                <Typography variant='body1'>
+                    • React, Redux, Axios
+                </Typography>
+                <Typography variant='body1'>
+                    • HTML, CSS, Boostrap, Material-UI
+                </Typography>
+                <Typography variant='body1'>
+                    • Git, Docker, Apache2
                 </Typography>
             </Grid>
             <Grid item className={classes.spaceBottom}>

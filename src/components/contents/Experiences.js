@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        paddingTop: '127.5px',
-        paddingBottom: '127.5px',
+        paddingTop: '127px',
+        paddingBottom: '127px',
         paddingLeft: '48px',
         paddingRight: '48px',
         [theme.breakpoints.down('sm')]: {
@@ -100,10 +100,16 @@ export function Experiences(props) {
                     </Grid>
                 </Grid>
                 <Typography className='subheading'>
-                    A FAIRE
+                    Stage Réseau, Hardware & Programmation
                 </Typography>
                 <Typography variant='body1'>
-                    A FAIRE
+                    • Programmation d'interface de connexion wifi
+                </Typography>
+                <Typography variant='body1'>
+                    • Mise en place de serveur PFSense
+                </Typography>
+                <Typography variant='body1'>
+                    • Réparation d'ordinateur
                 </Typography>
             </Grid>
         </Grid>

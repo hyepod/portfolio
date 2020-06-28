@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        paddingTop: '127.5px',
+        paddingTop: '127px',
         paddingBottom: '50px',
         paddingLeft: '48px',
         paddingRight: '48px',

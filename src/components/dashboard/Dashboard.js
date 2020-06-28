@@ -86,9 +86,9 @@ const Dashboard = React.forwardRef((props, ref) => {
         <Grid container direction="column">
             <About />
             <Education />
-            <Experiences />
             <Projects />
             <Skills />
+            <Experiences />
             <Interests />
             <Grid item container direction='row' style={{ backgroundColor: '#EEF0F2'}}>
                 <img src={climbing} alt="escalade" className={classes.climbing} />

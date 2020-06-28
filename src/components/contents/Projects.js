@@ -11,11 +11,10 @@ import OpenInNew from '@material-ui/icons/OpenInNew';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        paddingBottom: '127.5px',
-        paddingTop: '127.5px',
+        paddingBottom: '127px',
+        paddingTop: '127px',
         paddingLeft: '48px',
         paddingRight: '48px',
-        backgroundColor: '#EEF0F2',
         [theme.breakpoints.down('sm')]: {
             paddingLeft: '16px',
             paddingRight: '16px',

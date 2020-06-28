@@ -92,14 +92,15 @@ const Header = React.forwardRef((props, ref) => {
             <MenuItem component={Link} activeClass="active" to="education" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Formation</Typography>
             </MenuItem>
-            <MenuItem component={Link} activeClass="active" to="experiences" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
-                <Typography color="inherit">Experiences</Typography>
-            </MenuItem>
+
             <MenuItem component={Link} activeClass="active" to="projects" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Projets</Typography>
             </MenuItem>
             <MenuItem component={Link} activeClass="active" to="skills" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Compétences</Typography>
+            </MenuItem>
+            <MenuItem component={Link} activeClass="active" to="experiences" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
+                <Typography color="inherit">Experiences</Typography>
             </MenuItem>
             <MenuItem component={Link} activeClass="active" to="interests" spy={true} smooth={true} duration={500} onClick={handleMobileMenuClose}>
                 <Typography color="inherit">Centre d'intérêt</Typography>
@@ -138,11 +139,7 @@ const Header = React.forwardRef((props, ref) => {
                                     Formation
                                 </Typography>
                             </Grid>
-                            <Grid component={Link} item className={classes.hover} activeClass="active" to="experiences" spy={true} smooth={true} duration={500}>
-                                <Typography variant="button" className={classes.item}>
-                                    Expériences
-                                </Typography>
-                            </Grid>
+
                             <Grid component={Link} item className={classes.hover} activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
                                 <Typography variant="button" className={classes.item}>
                                     Projets
@@ -151,6 +148,11 @@ const Header = React.forwardRef((props, ref) => {
                             <Grid component={Link} item className={classes.hover} activeClass="active" to="skills" spy={true} smooth={true} duration={500}>
                                 <Typography variant="button" className={classes.item}>
                                     Compétences
+                                </Typography>
+                            </Grid>
+                            <Grid component={Link} item className={classes.hover} activeClass="active" to="experiences" spy={true} smooth={true} duration={500}>
+                                <Typography variant="button" className={classes.item}>
+                                    Expériences
                                 </Typography>
                             </Grid>
                             <Grid component={Link} item className={classes.hover} activeClass="active" to="interests" spy={true} smooth={true} duration={500}>

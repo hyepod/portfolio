@@ -9,9 +9,9 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
     firstItem: {
-        paddingTop: '127.5px',
+        paddingTop: '127px',
         backgroundColor: '#EEF0F2',
-        paddingBottom: '127.5px',
+        paddingBottom: '127px',
         paddingLeft: '48px',
         paddingRight: '48px',
         [theme.breakpoints.down('sm')]: {
